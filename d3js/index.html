@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>D3.js</title>
+		<link
+		  href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+		  rel="stylesheet"
+		/>
+		<link
+		  rel="stylesheet"
+		  href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+		  integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+		  crossorigin="anonymous"
+		/>
+		<link rel = "stylesheet" href="./style.css">
+    </head>
+    <body>
+		<nav>
+			<a href="#contact"><li>Contact</li></a>
+			<a href="https://github.com/abhij2127"target="_blank"><li>About</li></a>
+			
+		</nav>
+		<main>
+		
+			<header>
+				<div class="author-section">
+					<img src="./auth.jpg">  
+					<div>
+						<b>Author</b><br> 
+						Abhishek Joshi<br> 
+						<i>Graphic Era Hill University</i>
+					</div>
+				</div>
+				<hr>
+				<h1>Data Driven Documents with D3.js</h1>
+				<p class="justified-text"><i>What if someone told you that there is a way to add dynamic contents to your webpage without the tedious task of adding vannila javascript. "Well", you may say, "Cerytainly I can use react or any other modern component based frameworks", not that simple. The overhead of installing such large libraries just to add some dynamic content, moreover what if the data that you are recieving has to be shown in a Barchart or Scatter Chart, again you might say that there are awesome libraries like chart.js and google charts which I can use with frameworks, yes but again the overhead is too much. <a href="https://d3js.org/" target="_blank">D3.js</a> is a library that solves all of the problem by providing an easy to use interface and syntactical sugar. Let's see how.</i></p>
+			</header>
+			<div class="content">
+				<div><img src="./D3.png" class="content-cover"></div>
+				<p>
+					So now you have made up mind to add a new library to your resume and you are thinking where to start. It can be quite overwhelming with all the resources available on the internet, don't worry a list of best resources to refer to is compiled for you and you can check it <a href="#resources">here</a>.<br><br>
+					It is so simple to get started with using D3.js. Just add below line in your html page.
+				
+				</p>
+				<blockquote>&lt;script src=&quot;https://d3js.org/d3.v7.min.js&quot;&gt;&lt;/script&gt;</blockquote>
+				<br>
+				
+				<p>
+					So now you have added D3.js successfully. And we are all set to use it, but how? <br><i> " Note - If you want to use D3.js with frameworks like react, angular etc you can install it using npm. See official documentation <a href="https://github.com/d3/d3/wiki" target="_blank">here</a> for more info".</i>
+					
+				</p>
+				
+				<p>
+					Let's see how it works, by creating a simple bar graph with divs.<br><br>
+					Firstly create a html file with an empty div with classname 'visuals'.
+					<br>
+					<script src="https://gist.github.com/abhij2127/3f4496902f9e5f925c6cc6482a93a1d2.js"></script>
+					
+					After adding D3.js like this we are all set to proceed to our next step, that is adding elements dynamically. For sake of simplicity hardcoded data is used here rather than an API call.<br>
+					In the same directory create a file with the name of script.js and paste the following code snippet. Don't worry it will be explained.
+					<br><br>
+					<script src="https://gist.github.com/abhij2127/b502a9833848078e00d1523e2b3fca88.js"></script>
+					<br>
+					At last add a style.css file in the same directory and paste the below code snippet.
+					<br><br>
+					
+					<script src="https://gist.github.com/abhij2127/d488681e422fa5ea433bbe67637b3927.js"></script>
+					
+					<br>
+					To understand the code better you can refer to this free course from 
+					<a 
+						href="https://www.freecodecamp.org/learn/data-visualization/"
+						target="_blank"
+					>
+						FreeCodeCamp.Org
+					</a>.
+					<br><br>
+					Typically we will be using SVG for charts and other stuff. It was just a demo to get gist of the things you will be encountering.
+					<br>
+					Note that d3 object is already added to your script once you add the script path for d3.js.
+					
+					
+				</p>
+			</div>
+			
+		</main>
+		
+		<aside id="resources">
+			<h2>Resources</h2>
+			<a 
+				href="https://www.freecodecamp.org/learn/data-visualization/"
+				target="_blank"
+			><li>FreeCodeCamp.Org</li></a>
+			<a 
+				href="https://github.com/d3/d3/wiki"
+				target="_blank"
+			><li>D3.js Official</li></a>
+			<a 
+				href="https://www.youtube.com/watch?v=_8V5o2UHG0E"
+				target="_blank"
+			><li>FCC Youtube</li></a>
+			<a 
+				href="https://www.youtube.com/watch?v=bp2GF8XcJdY"
+				target="_blank"
+			><li>Fireship on Youtube</li></a>
+			
+			
+			
+		</aside>
+		
+		<footer id="contact" class="contact-section">
+			<div class="contact-section-header">
+				<h2>Let's work together...</h2>
+				<p class="coffee">How do you take your coffee?</p>
+			</div>
+			<div class="contact-links">
+				<a
+				  href="https://www.facebook.com/abhishek.joshi.35325074/"
+				  target="_blank"
+				  class="btn contact-details"
+				><i class="fab fa-facebook-square"></i> Facebook</a>
+				<a
+				  id="profile-link"
+				  href="https://github.com/abhij2127"
+				  target="_blank"
+				  class="btn contact-details"
+				><i class="fab fa-github"></i> GitHub</a>
+				<a
+				  href="https://twitter.com/JocAbhi"
+				  target="_blank"
+				  class="btn contact-details"
+				><i class="fab fa-twitter"></i> Twitter</a>
+				<a href="mailto:abhishekjoshi@gmail.com" class="btn contact-details"><i class="fas fa-at"></i> Send me mail</a>
+				<a href="tel:555-555-5555" class="btn contact-details">
+				<i class="fas fa-mobile-alt"></i> Call me</a>
+			</div>
+		</footer>
+        
+
+    </body>
+</html>
